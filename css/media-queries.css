@@ -1,0 +1,30 @@
+/* Media queries */
+@media (max-width: 930px) {
+    .header span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header span {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .header .text {
+        font-size: 15px;
+    }
+
+    .header .img-header {
+        width: 90%;
+    }
+}
+
+@media (max-width: 350px) {
+    .header span {
+        font-size: 20px;
+    }
+}
