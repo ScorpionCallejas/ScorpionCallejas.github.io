@@ -401,15 +401,36 @@
         </header>
         <main class="row">
           <div class="col-sm-12 col-md-6">
-            <form action="" class="form_contact">
+            <form action="" method="" id="form_contact">
               <h3 class="form_title">Formulario de contacto</h3>
-              <input type="email" class="form_input text" />
-              <label for="" class="form_label text">Correo</label>
-              <input type="text" class="form_input text" />
-              <label for="" class="form_label text">Nombre</label>
-              <input type="text" class="form_input text" />
-              <label for="" class="form_label text">Asunto</label>
-              <input type="submit" class="form_submit">
+              <input
+                name="name-user"
+                required
+                type="text"
+                id="name"
+                class="form_input text"
+              />
+              <label for="name-user" class="form_label text">Nombre</label>
+              <input
+                name="email-user"
+                required
+                type="email"
+                id="email"
+                class="form_input text"
+              />
+              <label for="email-user" class="form_label text">Correo</label>
+              <textarea
+                name="message-user"
+                required
+                rows="5"
+                type="text"
+                id="message"
+                class="form_input text textarea"
+              ></textarea>
+              <label for="message-user" class="form_label text label_textarea"
+                >Asunto</label
+              >
+              <input type="submit" class="form_submit" />
             </form>
           </div>
           <div class="col-sm-12 col-md-6">Tarjeta de presentación</div>

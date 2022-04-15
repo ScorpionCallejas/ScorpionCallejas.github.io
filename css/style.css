@@ -3,16 +3,14 @@
   --secundary-color: #17c317;
   --secundary-color-2: #1717c3;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 img {
   width: 100%;
 }
-
 .subtitle {
+  color: var(--main-color);
   width: 100%;
   margin: 20px 0px 20px 0px;
   font-family: monospace;
@@ -20,29 +18,24 @@ img {
   font-size: 40px;
   text-decoration: underline 5px var(--secundary-color);
 }
-
 .text {
   font-family: serif;
   font-size: 20px;
 }
-
 .main {
   padding: 10px;
 }
-
 .header {
   background: #c31717;
   color: #fff;
   margin-bottom: 10px;
 }
-
 .header .img-header {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-
 .header span {
   font-size: 40px;
   display: block;
@@ -55,54 +48,50 @@ img {
   animation: typing 4s steps(24), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
-
 .header a {
   background-color: #000;
   color: #fff;
   display: block;
   text-align: center;
   font-size: 25px;
-  padding: 20px;
+  padding: 25px;
   margin: 20px auto 20px auto;
   width: 250px;
-  border-radius: 50%;
+  border-radius: 70%;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-/* Animaciones */
+/* Animación de maquina de escribir */
 @keyframes typing {
   from {
     width: 0;
   }
 }
-
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
 
+/* Tecnologías dominadas */
 .progress {
   height: 40px;
   margin: 10px;
 }
-
 .table-tecnologies {
   width: 100%;
 }
-
 .tecnologies {
   width: 10%;
 }
-
 .carousel {
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Formulario de contacto */
-.form_contact {
+#form_contact {
   position: relative;
   width: 90%;
   padding: 15px;
@@ -110,7 +99,6 @@ img {
   margin-right: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
-
 .form_title {
   font-weight: bold;
   text-align: center;
@@ -119,21 +107,18 @@ img {
   font-size: 30px;
   margin-bottom: 30px;
 }
-
 .form_label,
 .form_input,
 .form_submit {
   display: block;
   width: 100%;
 }
-
 .form_input {
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid #000;
   padding: 20px;
   margin-bottom: 40px;
 }
-
 .form_label {
   color: rgba(0, 0, 0, 0.7);
   padding-left: 15px;
@@ -142,7 +127,6 @@ img {
   z-index: -5;
   transition: all 0.3s;
 }
-
 .form_submit {
   font-size: 25px;
   border-radius: 10px;
@@ -151,13 +135,20 @@ img {
   background-color: var(--secundary-color-2);
   border: none;
 }
-
+.label_textarea {
+  margin-top: -215px;
+}
 .form_input:focus + .form_label {
   margin-top: -145px;
 }
-
+.textarea:focus + .label_textarea {
+  margin-top: -265px;
+}
 .fijar {
   margin-top: -145px;
+}
+.fijar.label_textarea {
+  margin-top: -265px;
 }
 
 /* Media queries */
@@ -165,15 +156,12 @@ img {
   .main {
     padding: 0px;
   }
-
   .header span {
     font-size: 30px;
   }
-
   .tecnologies {
     width: 10%;
   }
-
   .progress {
     height: 20px;
   }
@@ -183,19 +171,15 @@ img {
   .header span {
     font-size: 23px;
   }
-
   .subtitle {
     font-size: 30px;
   }
-
   .header .text {
     font-size: 15px;
   }
-
   .header .img-header {
     width: 90%;
   }
-
   .tecnologies {
     width: 30%;
   }
