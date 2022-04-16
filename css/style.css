@@ -70,20 +70,28 @@ img {
   border-bottom-right-radius: 10px;
 }
 .footer {
+  z-index: -2;
   display: block;
   width: 100%;
   text-align: center;
   background-color: var(--main-color);
   color: #fff;
-  padding: 20px;
-  margin-top: 10px;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 23px;
 }
 .bold {
   font-weight: bold;
   font-style: italic;
+}
+.oval {
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 /* Animación de maquina de escribir */
@@ -244,6 +252,9 @@ img {
   }
   .img-presentation + .text-container {
     width: 100%;
+  }
+  .footer {
+    font-size: 18px;
   }
 }
 
