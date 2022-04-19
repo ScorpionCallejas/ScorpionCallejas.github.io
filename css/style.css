@@ -9,6 +9,17 @@ html {
 img {
   width: 100%;
 }
+.logo {
+  width: 50px;
+}
+.img-professional {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 .subtitle {
   color: var(--main-color);
   width: 100%;
@@ -28,11 +39,13 @@ img {
 }
 .text {
   font-family: serif;
-  font-size: 20px;
+  font-size: 22px;
 }
 .main {
   padding: 10px;
 }
+
+/* Cabecera */
 .header {
   background: #c31717;
   color: #fff;
@@ -168,19 +181,19 @@ img {
   border: none;
 }
 .label_textarea {
-  margin-top: -215px;
+  margin-top: -228px;
 }
 .form_input:focus + .form_label {
   margin-top: -145px;
 }
 .textarea:focus + .label_textarea {
-  margin-top: -265px;
+  margin-top: -277px;
 }
 .fijar {
   margin-top: -145px;
 }
 .fijar.label_textarea {
-  margin-top: -265px;
+  margin-top: -277px;
 }
 
 /* Tarjeta de presentación */
@@ -225,10 +238,6 @@ img {
   margin-right: auto;
   transition: 0.3s;
 }
-.social-media:hover {
-  width: 100%;
-  box-shadow: 0px 0px 50px #000;
-}
 
 /* Media queries */
 @media (max-width: 930px) {
@@ -256,6 +265,9 @@ img {
   .footer {
     font-size: 18px;
   }
+  .img-professional {
+    width: 90%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -279,5 +291,20 @@ img {
 @media (max-width: 350px) {
   .header span {
     font-size: 20px;
+  }
+}
+
+/* Efecto hover */
+@media (hover: hover) {
+  .social-media:hover {
+    width: 100%;
+    box-shadow: 0px 0px 50px #000;
+  }
+  .nav-item {
+    transition: 0.5s;
+  }
+  .nav-item:hover {
+    box-shadow: 0px 0px 10px #1717c3;
+    border-radius: 30px;
   }
 }
