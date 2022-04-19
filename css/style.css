@@ -47,15 +47,16 @@ img {
 
 /* Cabecera */
 .header {
-  background: #c31717;
+  background: var(--main-color);
   color: #fff;
   margin-bottom: 10px;
 }
-.header .img-header {
+.img-header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
 }
 .header span {
   font-size: 40px;
@@ -266,7 +267,7 @@ img {
     font-size: 18px;
   }
   .img-professional {
-    width: 90%;
+    width: 80%;
   }
 }
 
