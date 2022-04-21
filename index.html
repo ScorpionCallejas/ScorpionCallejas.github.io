@@ -24,6 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/style.css" />
     <title>Mi portafolio web</title>
   </head>
@@ -32,7 +33,7 @@
     <header class="row align-items-center header">
       <div class="col-xs-12 col-sm-7">
         <span> I´am Front-end Developer </span>
-        <p class="text">
+        <p data-aos="zoom-in-right" class="text">
           Bienvenido seas a mi portafolio digital cyber nauta. Espero te ayude a
           conocerme mas a fondo y explorar los servicios web que como
           desarrollador puedo crear con tecnologías de punta y actualizadas para
@@ -43,6 +44,7 @@
       </div>
       <div class="col-xs-12 col-sm-5">
         <img
+          data-aos="zoom-in"
           class="justify-self-center img-header"
           src="/assets/images/Banner.webp"
           alt="Banner"
@@ -69,15 +71,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="w-100 d-flex justify-content-around navbar-nav">
             <li class="p-2 nav-item">
-              <a href="#about-me" class="nav-link active" aria-current="page"
+              <a href="#about-me" data-aos="zoom-in" class="nav-link active" aria-current="page"
                 >Acerca de mi</a
               >
             </li>
             <li class="p-2 nav-item">
-              <a href="#projects" class="nav-link active">Proyectos</a>
+              <a href="#projects" data-aos="zoom-in" class="nav-link active">Proyectos</a>
             </li>
             <li class="p-2 nav-item">
-              <a href="#contact" class="nav-link active">Contacto</a>
+              <a href="#contact" data-aos="zoom-in" class="nav-link active">Contacto</a>
             </li>
           </ul>
         </div>
@@ -94,12 +96,13 @@
         <div class="row">
           <div class="col-xm-12 col-sm-4 col-xl-3">
             <img
+              data-aos="fade-down-right"
               class="img-professional"
               src="/assets/images/Foto_Profesional.webp"
               alt="Foto profesional"
             />
           </div>
-          <p class="col-xm-12 col-sm-8 col-xl-5 text">
+          <div data-aos="flip-left" class="col-xm-12 col-sm-8 col-xl-5 text">
             Mi nombre es Raul Callejas, Soy un joven apasionado por el mundo de
             la tecnología 📺 en especial del lado de la web, por ello, me eh
             encargado de aprender lo mejor y lo más innovador posible de las
@@ -111,8 +114,8 @@
             desarrollador, con la seguridad de que tendrás una página la cual
             mejorara tu negocio y ayudara a posicionarte más alto que la
             competencia, permitiendo así obtener una mayor popularidad.
-          </p>
-          <div class="col-xm-12 col-xl-4">
+          </div>
+          <div data-aos="zoom-out-down" class="col-xm-12 col-xl-4">
             <table class="table-tecnologies">
               <tr>
                 <td class="tecnologies">
@@ -331,7 +334,7 @@
             <h2 class="subtitle">Proyectos</h2>
           </div>
         </header>
-        <div class="row">
+        <div data-aos="flip-up" class="row">
           <div class="col-12">
             <div
               id="carouselProjects"
@@ -459,7 +462,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-xl-5">
             <!-- Tarjeta de presentación -->
-            <div class="target-presentation">
+            <div data-aos="fade-right" class="target-presentation">
               <img
                 class="img-presentation"
                 src="/assets/images/img-target.webp"
@@ -524,7 +527,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-xl-7">
+          <div data-aos="fade-left" class="col-xs-12 col-sm-6 col-xl-7">
             <!-- Formulario de contacto con la api de formspree -->
             <form
               action="https://formspree.io/f/xpzbyepy"
@@ -562,6 +565,7 @@
             </form>
           </div>
           <div
+            data-aos="zoom-in"
             class="row row-cols-2 row-cols-md-4 row-cols-xl-5 row-cols-xxl-6 col-12"
           >
             <h3 class="col-12 subtitle-2">Redes sociales</h3>
@@ -1022,6 +1026,10 @@
       </div>
     </footer>
     <script src="/js/bootstrap.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/js/script.js"></script>
   </body>
 </html>

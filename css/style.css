@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 img {
   width: 100%;
   height: auto;
@@ -157,6 +160,9 @@ picture + .text {
   padding: 5px;
   opacity: 0.8;
   bottom: 0;
+}
+.mobile {
+  display: none;
 }
 
 /* Formulario de contacto */
