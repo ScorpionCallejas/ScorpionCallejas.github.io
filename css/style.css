@@ -6,7 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+.header,
+.navbar,
+.main {
   overflow-x: hidden;
 }
 img {
