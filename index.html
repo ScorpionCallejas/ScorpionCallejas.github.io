@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="10;url=index.html"> -->
     <!-- SEO -->
     <meta name="author" content="Raul Callejas" />
     <meta
@@ -30,27 +31,6 @@
   </head>
   <body class="container-fluid">
     <!-- Presentación -->
-    <header class="row align-items-center header">
-      <div class="col-xs-12 col-sm-7">
-        <span> I´am Front-end Developer </span>
-        <p data-aos="zoom-in-right" class="text">
-          Bienvenido seas a mi portafolio digital cyber nauta. Espero te ayude a
-          conocerme mas a fondo y explorar los servicios web que como
-          desarrollador puedo crear con tecnologías de punta y actualizadas para
-          la mejoría de tu negocio con el objetivo de que en un futuro me
-          permitas trabajar contigo.
-        </p>
-        <a href="#about-me">¿Quién soy</a>
-      </div>
-      <div class="col-xs-12 col-sm-5">
-        <img
-          data-aos="zoom-in"
-          class="justify-self-center img-header"
-          src="/assets/images/Banner.webp"
-          alt="Banner"
-        />
-      </div>
-    </header>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -85,6 +65,27 @@
         </div>
       </div>
     </nav>
+    <header class="row align-items-center header">
+      <div class="col-xs-12 col-sm-7">
+        <span> I´am Front-end Developer </span>
+        <p data-aos="zoom-in-right" class="text">
+          Bienvenido seas a mi portafolio digital cyber nauta. Espero te ayude a
+          conocerme mas a fondo y explorar los servicios web que como
+          desarrollador puedo crear con tecnologías de punta y actualizadas para
+          la mejoría de tu negocio con el objetivo de que en un futuro me
+          permitas trabajar contigo.
+        </p>
+        <a href="#about-me">¿Quién soy</a>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <img
+          data-aos="zoom-in"
+          class="justify-self-center img-header"
+          src="/assets/images/Banner.webp"
+          alt="Banner"
+        />
+      </div>
+    </header>
     <main class="main">
       <!-- ¿Quién soy? -->
       <section id="about-me">
@@ -530,7 +531,7 @@
           <div data-aos="fade-left" class="col-xs-12 col-sm-6 col-xl-7">
             <!-- Formulario de contacto con la api de formspree -->
             <form
-              action="https://formspree.io/f/xpzbyepy"
+              action="/main.php"
               method="post"
               id="form_contact"
             >
@@ -561,7 +562,7 @@
               <label for="message" class="form_label text label_textarea"
                 >Asunto</label
               >
-              <button type="submit" class="form_submit">Enviar</button>
+              <button type="submit" class="form_submit" id="refresh">Enviar</button>
             </form>
           </div>
           <div
