@@ -9,6 +9,13 @@ html {
 body {
   padding: 0px !important;
 }
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #ccc;
+}
 .content {
   padding: 0px 0.75rem 0px 0.75rem;
 }

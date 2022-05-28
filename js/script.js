@@ -1,7 +1,11 @@
-let refresh = document.getElementById('refresh');
-refresh.addEventListener('click', _ => {
-            location.reload();
-})
+// SweetAlert2
+Swal.fire({
+  title: "Bienvenido",
+  confirmButtonText: "<a href='https://es.fiverr.com/s2/4c0077f7c8' target='_blank' class='link'> Lleguemos a un acuerdo </a>",
+  text: "Permiteme acompañarte a alcanzar el exito con la ayuda de las nuevas tecnologias",
+  showCancelButton: true,
+  cancelButtonText: "Más tarde",
+});
 
 // Formulario de contacto
 let input = document.getElementsByClassName("form_input");
