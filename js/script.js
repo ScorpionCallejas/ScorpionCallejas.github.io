@@ -10,11 +10,12 @@ Swal.fire({
 // Formulario de contacto
 let input = document.getElementsByClassName("form_input");
 for (let i = 0; input.length; i++) {
-  input[i].addEventListener("keyup", function() {
+  input[i].addEventListener("keyup", funcion());
+  function funcion(){
     if (this.value.length >= 1) {
       this.nextElementSibling.classList.add("fijar");
     } else {
       this.nextElementSibling.classList.remove("fijar");
     }
-  });
+  };
 }
